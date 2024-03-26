@@ -1,26 +1,12 @@
-# why this fork of LARBS?
+# Why this fork of LARBS?
 
-I have been a long time LARBS user and I find that the [default (LARBS) repo](https://github.com/LukeSmithxyz/LARBS)
-comes with missing dependencies & missing functionality compared to the settings
-located in [Luke's (voidrice) repo](https://github.com/lukesmithxyz/voidrice), and that his "rice" isn't really a rice since it
-doesn't come with a uniform look, or any look at all, instead it comes as a
-complete mess of various colors and looks ugly by default ...
+I'm using this (https://github.com/kronikpillow/LARBS) fork as a base to fork Luke's LARBS because I like its visual style but there is a few programs I simply do not use nor like. I did not make any big changes to it beyond changing the default browser to firefox and removing the RSS feed, music, and mail related programs and scripts.
 
-This is a attempt to fix that ...
+Please refer to the progs.cvs file for more information.
 
-Apart from covering the missing dependencies of Luke's dotfiles this fork
-comes with a few extras that i find essential to my Linux experience, and is
-riced with the Nord colorscheme everywhere possible.
+### Note
 
-Instead of using Luke's dotfiles the installer installs [my own (voidrice) fork](https://github.com/kronikpillow/voidrice)
-which is riced with the Nord colorscheme and contains a few extras to complement
-the [my (voidrice) fork](https://github.com/kronikpillow/voidrice).
-
-Currently I don't maintain compatibility with Artix on [my (voidrice) fork](https://github.com/kronikpillow/voidrice) as
-I don't use Artix or other distro's or init systems and don't care about
-maintaining compatibility, as I'm not a Linux guru and I'v found my experience
-on other init systems unpleasant due to lack of support, tutorials & examples,
-so for me living with systemd atm is just fine.
+If the "Failed to install AUR helper" message appears any time during installation, install yay manually through the terminal and then comment all yay and manualinstall related commands inside the script, including the "Failed to install AUR helper" message itself.
 
 ## Luke's Auto-Rice Bootstrapping Scripts (LARBS)
 
@@ -29,7 +15,7 @@ so for me living with systemd atm is just fine.
 On an Arch-based distribution as root, run the following:
 
 ```
-curl -LO https://raw.githubusercontent.com/kronikpillow/LARBS/master/larbs.sh
+curl -LO https://raw.githubusercontent.com/garaqta/LARBS/master/larbs.sh
 sh larbs.sh
 ```
 
@@ -46,7 +32,7 @@ with a fully configured diving-board for work or more customization.
 ### Customization
 
 By default, LARBS uses the programs [here in progs.csv](progs.csv) and installs
-[my fork of (voidrice) here](https://github.com/kronikpillow/voidrice),
+[my fork of (voidrice) here](https://github.com/garaqta/voidrice),
 but you can easily change this by either modifying the default variables at the
 beginning of the script or giving the script one of these options:
 
