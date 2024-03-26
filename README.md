@@ -6,7 +6,7 @@ Please refer to the progs.cvs file for more information.
 
 ### Note
 
-If the "Failed to install AUR helper" message appears any time during installation, install yay manually through the terminal and then comment all yay and manualinstall related commands inside the script, including the "Failed to install AUR helper" message itself.
+If the "Failed to install AUR helper" message appears any time during installation, install ```yay``` manually through the terminal and then comment all ```yay``` and ```manualinstall``` related commands inside the script, including the "Failed to install AUR helper" message itself.
 
 ## Luke's Auto-Rice Bootstrapping Scripts (LARBS)
 
